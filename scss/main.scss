@@ -1,0 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', monospace;
+}
+
+$negroPrimario: #363636;
+
+@import './header/header';
+@import './secciones/section';

@@ -1,0 +1,235 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Fira Code", monospace;
+}
+
+.header {
+  background-color: #000b1a;
+  width: 10%;
+  height: 100vh;
+  position: fixed;
+}
+.header .nav {
+  width: 100%;
+  height: 100%;
+}
+.header .nav .nav__icons {
+  height: 30%;
+  width: 100%;
+}
+.header .nav .nav__ul {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+}
+.header .nav .nav__ul .nav__li {
+  width: 100%;
+  height: 15%;
+  border-bottom: #595959 solid 0.1px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.header .nav .nav__ul .nav__li .nav__a {
+  text-decoration: none;
+  color: #dad6d6;
+  font-weight: normal;
+  text-shadow: 1px 1px 10px rgb(7, 7, 240);
+}
+.header .nav .nav__ul .nav__li .nav__a:hover {
+  color: #008f39;
+}
+.header .nav .nav__redes {
+  width: 100%;
+  height: 4%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.header .nav .nav__redes .nav__iconos {
+  width: 20%;
+  height: 100%;
+}
+.header .nav .nav__redes .nav__iconos .nav__link {
+  color: #dad6d6;
+  font-size: 1.5rem;
+  margin-left: 3px;
+  text-shadow: 1px 1px 10px rgb(7, 7, 240);
+}
+.header .nav .nav__redes .nav__iconos .nav__link:hover {
+  color: #008f39;
+}
+
+.contenedor__inicio {
+  width: 100%;
+  height: 100vh;
+  background: url(../../img/fondo.jpg);
+  background-size: cover;
+}
+.contenedor__inicio .contenedor__main {
+  width: 90%;
+  height: 100%;
+  margin-left: 10%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+}
+.contenedor__inicio .contenedor__main .contenedor__titulo {
+  width: 95%;
+  height: 100%;
+  margin-left: 5%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+.contenedor__inicio .contenedor__main .contenedor__titulo .contenedor__h1 {
+  font-size: 7rem;
+  font-family: "Bebas Neue", cursive;
+  color: #ffffff;
+}
+.contenedor__inicio .contenedor__main .contenedor__titulo .contenedor__h1 .contenedor__span {
+  display: block;
+  font-family: "Bebas Neue", cursive;
+}
+.contenedor__inicio .contenedor__main .contenedor__titulo .contenedor__h4 {
+  font-size: 2rem;
+  color: #dad6d6;
+}
+.contenedor__inicio .contenedor__main .contenedor__titulo .contenedor__link {
+  text-decoration: none;
+  width: 30%;
+  height: 10%;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 20px;
+  display: inline-block;
+  position: relative;
+  text-shadow: 1px 1px 15px rgb(7, 7, 240);
+  box-shadow: 1px 1px 10px rgb(7, 7, 240);
+  color: #dad6d6;
+  z-index: 2;
+  border: solid 1px #008f39;
+}
+.contenedor__inicio .contenedor__main .contenedor__titulo .contenedor__a {
+  position: relative;
+  font-weight: bold;
+  z-index: 4;
+}
+.contenedor__inicio .contenedor__main .contenedor__titulo .contenedor__link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #008f39;
+  opacity: 0.2;
+  transition: all 0.9s;
+}
+.contenedor__inicio .contenedor__main .contenedor__titulo .contenedor__link:hover::after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #008f39;
+  z-index: 1;
+  opacity: 0.5;
+}
+.contenedor__inicio .contenedor__main .contenedor__perfil {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor__inicio .contenedor__main .contenedor__perfil .contenedor__avatar {
+  width: 80%;
+  height: 80%;
+  border-radius: 100%;
+  box-shadow: 1px 1px 20px rgba(18, 18, 224, 0.514);
+  background: url(../../img/perfil.jpg);
+  background-size: cover;
+}
+
+.contenedor__about {
+  width: 100%;
+  height: 100vh;
+  background: url(../../img/fondo.jpg);
+  background-size: cover;
+}
+
+.contenedor__skills {
+  width: 100%;
+  height: 100vh;
+  background: url(../../img/fondo.jpg);
+  background-size: cover;
+}
+
+.contenedor__proyectos {
+  width: 100%;
+  height: 100vh;
+  background: url(../../img/fondo.jpg);
+  background-size: cover;
+}
+
+.contenedor__contactos {
+  width: 100%;
+  height: 100vh;
+  background: url(../../img/fondo.jpg);
+  background-size: cover;
+}
+.contenedor__contactos .contenedor__big {
+  width: 90%;
+  height: 100%;
+  margin-left: 10%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 20% 40% 40%;
+  grid-template-areas: "contacto contacto" "formulario mapa" "formulario mapa";
+}
+.contenedor__contactos .contenedor__big .contenedor__contacto {
+  grid-area: contacto;
+}
+.contenedor__contactos .contenedor__big .contenedor__form {
+  grid-area: formulario;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor__contactos .contenedor__big .contenedor__form .contenedor__text {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.contenedor__contactos .contenedor__big .contenedor__form .contenedor__text .contenedor__name {
+  display: inline-block;
+  width: 49%;
+  height: 5vh;
+}
+.contenedor__contactos .contenedor__big .contenedor__form .contenedor__text .contenedor__email {
+  display: inline-block;
+  width: 49%;
+  height: 5vh;
+}
+.contenedor__contactos .contenedor__big .contenedor__form .contenedor__asunto {
+  display: inline-block;
+  width: 80%;
+  height: 5vh;
+  margin-bottom: 10px;
+}
+.contenedor__contactos .contenedor__big .contenedor__form .contenedor__textarea {
+  width: 80%;
+  height: 30vh;
+}
+.contenedor__contactos .contenedor__big .contenedor__map {
+  grid-area: mapa;
+}/*# sourceMappingURL=main.css.map */

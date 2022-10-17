@@ -1,0 +1,173 @@
+.contenedor__inicio{
+        width: 100%;
+        height: 100vh;
+        background: url(../../img/fondo.jpg);
+        background-size: cover;
+        .contenedor__main{
+            width: 90%;
+            height: 100%;
+            margin-left: 10%;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 100%;
+            .contenedor__titulo{
+                width: 95%;
+                height: 100%;
+                margin-left: 5%;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                .contenedor__h1{
+                    font-size: 7rem;
+                    font-family: 'Bebas Neue', cursive;
+                    color: #ffffff;
+                    .contenedor__span{
+                        display: block;
+                        font-family: 'Bebas Neue', cursive;
+                    }
+                }
+                .contenedor__h4{
+                    font-size: 2rem;
+                    color: #dad6d6;
+                }
+                .contenedor__link{
+                    text-decoration: none;
+                    width: 30%;
+                    height: 10%;
+                    padding: 20px 0;
+                    text-align: center;
+                    margin-top: 20px;
+                    display: inline-block;
+                    position: relative;
+                    text-shadow: 1px 1px 15px rgb(7, 7, 240);
+                    box-shadow: 1px 1px 10px rgb(7, 7, 240);
+                    color:#dad6d6;
+                    z-index: 2;
+                    border: solid 1px #008f39;
+                }
+                .contenedor__a{
+                    position: relative;
+                    font-weight: bold;
+                    z-index: 4;
+                }
+                .contenedor__link::after{
+                    content: "";
+                    position:absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 0%;
+                    height: 100%;
+                    background-color:#008f39;
+                    opacity: 0.2;
+                    transition: all .9s;
+                }
+                .contenedor__link:hover::after{
+                    content: " ";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color:#008f39;
+                    z-index: 1;
+                    opacity: 0.5;
+                }
+            }
+            .contenedor__perfil{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .contenedor__avatar{
+                    width:80%;
+                    height: 80%;
+                    border-radius: 100%;
+                    box-shadow: 1px 1px 20px rgba(18, 18, 224, 0.514);
+                    background: url(../../img/perfil.jpg);
+                    background-size: cover;
+                }
+            }
+        }
+}
+
+.contenedor__about{
+    width: 100%;
+    height: 100vh;
+    background: url(../../img/fondo.jpg);
+    background-size: cover;
+}
+
+.contenedor__skills{
+    width: 100%;
+    height: 100vh;
+    background: url(../../img/fondo.jpg);
+    background-size: cover;
+}
+
+.contenedor__proyectos{
+    width: 100%;
+    height: 100vh;
+    background: url(../../img/fondo.jpg);
+    background-size: cover;
+}
+
+.contenedor__contactos{
+    width: 100%;
+    height: 100vh;
+    background: url(../../img/fondo.jpg);
+    background-size: cover;
+    .contenedor__big{
+        width: 90%;
+        height: 100%;
+        margin-left: 10%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 20% 40% 40%;
+        grid-template-areas:
+        "contacto contacto"
+        "formulario mapa"
+        "formulario mapa"
+        ;
+        .contenedor__contacto{
+            grid-area: contacto;
+        }
+        .contenedor__form{
+            grid-area: formulario;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            .contenedor__text{
+                width: 80%;
+                display: flex;
+                justify-content:space-between;
+                margin-bottom: 10px;
+                .contenedor__name{
+                    display: inline-block;
+                    width: 49%;
+                    height: 5vh;
+                }
+                .contenedor__email{
+                    display: inline-block;
+                    width: 49%;
+                    height: 5vh;
+                }
+                
+            }
+            .contenedor__asunto{
+                display: inline-block;
+                width: 80%;
+                height: 5vh;
+                margin-bottom: 10px;
+            }
+            .contenedor__textarea{
+                width: 80%;
+                height: 30vh;
+            }
+        }
+        .contenedor__map{
+            grid-area: mapa;
+        }
+    }
+}
