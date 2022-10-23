@@ -1,8 +1,9 @@
 .contenedor__inicio{
         width: 100%;
         height: 100vh;
-        background: url(../../img/fondo.jpg);
+        background: linear-gradient( #131c5a7e 100%,transparent),url(../../img/fondo.jpg);
         background-size: cover;
+      
         .contenedor__main{
             width: 90%;
             height: 100%;
@@ -86,6 +87,7 @@
                     box-shadow: 1px 1px 20px rgba(18, 18, 224, 0.514);
                     background: url(../../img/perfil.jpg);
                     background-size: cover;
+                    background-position: center;
                 }
             }
         }
@@ -94,28 +96,28 @@
 .contenedor__about{
     width: 100%;
     height: 100vh;
-    background: url(../../img/fondo.jpg);
+    background: linear-gradient( #131c5a7e 100%,transparent),url(../../img/fondo.jpg);
     background-size: cover;
 }
 
 .contenedor__skills{
     width: 100%;
     height: 100vh;
-    background: url(../../img/fondo.jpg);
+    background: linear-gradient( #131c5a7e 100%,transparent),url(../../img/fondo.jpg);
     background-size: cover;
 }
 
 .contenedor__proyectos{
     width: 100%;
     height: 100vh;
-    background: url(../../img/fondo.jpg);
+    background: linear-gradient( #131c5a7e 100%,transparent),url(../../img/fondo.jpg);
     background-size: cover;
 }
 
 .contenedor__contactos{
     width: 100%;
     height: 100vh;
-    background: url(../../img/fondo.jpg);
+    background: linear-gradient( #131c5a7e 100%,transparent),url(../../img/fondo.jpg);
     background-size: cover;
     .contenedor__big{
         width: 90%;
@@ -140,30 +142,145 @@
             align-items: center;
             .contenedor__text{
                 width: 80%;
+                height: 10%;
                 display: flex;
                 justify-content:space-between;
                 margin-bottom: 10px;
                 .contenedor__name{
                     display: inline-block;
+                    background-color: #010833c4;
                     width: 49%;
-                    height: 5vh;
+                    height: 100%;
+                    border: none;
+                    padding-left: 10px;
+                    color:#dad6d6;
+                }
+                .contenedor__name:focus{
+                    outline: 0 none;
+                    border-bottom: #008f39 1px solid;
+                }
+                .contenedor__name::placeholder{
+                    color:#008f39;
                 }
                 .contenedor__email{
                     display: inline-block;
+                    background-color: #010833c4;
                     width: 49%;
-                    height: 5vh;
+                    height: 100%;
+                    border: none;
+                    padding-left: 10px;
+                    color:#dad6d6;
                 }
-                
+                .contenedor__email:focus{
+                    outline: 0 none;
+                }
+                .contenedor__email::placeholder{
+                    color:#008f39;
+                }
             }
             .contenedor__asunto{
                 display: inline-block;
+                position: relative;
                 width: 80%;
-                height: 5vh;
+                height: 10%;
                 margin-bottom: 10px;
+                background-color: #010833c4;
+                border: none;
+                padding-left: 10px;
+                color:#dad6d6;
+            }
+           
+            .contenedor__asunto::placeholder{
+                color:#008f39;
+            }
+            .contenedor__asunto:focus{
+                outline: 0 none;
             }
             .contenedor__textarea{
+                display: block;
                 width: 80%;
-                height: 30vh;
+                height: 40%;
+                resize:vertical;
+                background-color: #010833c4;
+                border: none;
+                padding-left: 10px;
+                padding-top: 10px;
+                color:#dad6d6;
+            }
+            .contenedor__textarea:focus{
+                    outline: 0 none;
+            }
+            .contenedor__textarea::placeholder{
+                color:#008f39;
+            }
+            .contenedor__botones{
+                display: flex;
+                margin-top: 10px;
+                width: 80%;
+                height: 15%;
+                justify-content: center;
+                align-items: center;
+                .contenedor__send{
+                    display: block;
+                    border: none;
+                    width: 30%;
+                    height: 60%;
+                    position: relative;
+                    border: #008f39 solid 1px;
+                    background-color: transparent;
+                    cursor: pointer;
+                    color: #dad6d6;
+                }
+                .contenedor__send::after{
+                    content: "";
+                    position:absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 0%;
+                    height: 0%;
+                    background-color: #008f394f;
+                    transition: all .2s;
+                }
+                .contenedor__send:hover::after{
+                    content: "";
+                    position:absolute;
+                    left: 0;
+                    bottom: 0;
+                    width:100%;
+                    height: 100%;
+                    background-color: #008f394f;
+                }
+                .contenedor__reset{
+                    display: block;
+                    position: relative;
+                    border: none;
+                    width: 30%;
+                    height: 60%;
+                    margin-left: 20px;
+                    border: #008f39 solid 1px;
+                    background-color: transparent;
+                    color: #dad6d6;
+                    cursor: pointer;
+                }
+                .contenedor__reset::after{
+                    content: "";
+                    position:absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 0%;
+                    height: 0%;
+                    background-color: #008f394f;
+                    transition: all .2s;
+                }
+                .contenedor__reset:hover::after{
+                    content: "";
+                    position:absolute;
+                    left: 0;
+                    bottom: 0;
+                    width:100%;
+                    height: 100%;
+                    background-color: #008f394f;
+                }
             }
         }
         .contenedor__map{
