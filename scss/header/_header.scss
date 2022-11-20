@@ -10,7 +10,19 @@
         .nav__icons{
             height: 30%;
             width: 100%;
-            // background-color: #000000;
+            background-color: #000000;
+            color:#dad6d6;
+            .nav__h2{
+                text-align: center;
+                font-size: 7rem;
+                height: 70%;
+                text-shadow: -8px 2px 5px rgb(7, 7, 240);
+            }
+            .nav__developer{
+                font-size: 0.9rem;
+                text-align: center;
+                margin-top: 15px;
+            }
         }
         .nav__ul{
             width: 100%;
@@ -53,6 +65,7 @@
                     font-size: 1.5rem;
                     margin-left: 3px;
                     text-shadow: 1px 1px 10px rgb(7, 7, 240);
+                    transition: all .2s;
                 }
                 .nav__link:hover{
                     color:#008f39;

@@ -85,7 +85,7 @@
                     height: 80%;
                     border-radius: 100%;
                     box-shadow: 1px 1px 20px rgba(18, 18, 224, 0.514);
-                    background: url(../../img/perfil.jpg);
+                    background: url(../../img/perfil.JPG);
                     background-size: cover;
                     background-position: center;
                 }
@@ -109,9 +109,33 @@
 
 .contenedor__proyectos{
     width: 100%;
-    height: 100vh;
+    height: auto;
     background: linear-gradient( #131c5a7e 100%,transparent),url(../../img/fondo.jpg);
     background-size: cover;
+    .contenedor__misProyectos{
+        width:90%;
+        margin-left: 10%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(4,25%);
+        grid-template-rows: repeat(2,50%);
+        .contenedor__proyecto-link{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            .contenedor__proyecto{
+                width: 100%;
+                height: 100%;
+                background:linear-gradient(rgba(0, 0, 0, 0.623) 100%,transparent),url(../../img/proyecto-1.JPG);
+                background-size: cover;
+                transition: all .7s;
+            }
+            .contenedor__proyecto:hover{
+                transform: scale(1.1,1.1);
+
+            }
+        }
+    }
 }
 
 .contenedor__contactos{
@@ -133,6 +157,9 @@
         ;
         .contenedor__contacto{
             grid-area: contacto;
+            font-size: 4rem;
+            text-align: center;
+            color:#dad6d6;
         }
         .contenedor__form{
             grid-area: formulario;
@@ -285,6 +312,28 @@
         }
         .contenedor__map{
             grid-area: mapa;
+            position:relative;
+            .contenedor__iframe{
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+            .contenedor__alert{
+                position:absolute;
+                top: 40px;
+                left: 50px;
+                background: #000000ec;
+                height: 30%;
+                width: 50%;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: space-between;
+                color:#dad6d6;
+                padding: 20px 20px;
+            }
         }
     }
 }
+
+
+// ../../img/fondo.jpg
